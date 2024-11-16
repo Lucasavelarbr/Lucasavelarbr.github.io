@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+   background-color: #d2cfcf
+}
+
+.interface {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height:120px;
+    padding: 20px;
+    background-color: rgba(12, 12, 12, 0.374);
+    position: fixed;
+    -webkit-backdrop-filter: blur(100%);
+    backdrop-filter: blur(10px);
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{
+    max-width: 80px;
+}
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 40px;
+}
+
+header .menu-desktop nav ul li a {
+    color: rgb(247, 243, 243);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header .menu-desktop nav ul li a:hover {
+    transform: scale(1.20);
+}
+
+header .btn-contato button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #f9f8f8;
+    border: 1px solid #fbfafa;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    background-color: #fffdfd;
+    color: rgb(10, 10, 10);
+}
+
+section.hero-site {
+    height: 100vh;
+    background-image: url(../IMG/paisagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #f9f7f7fb;
+}
+
+section.hero-site .overplay{
+    opacity: inherit;
+}
+
+.hero-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 300;
+}
+
+.hero-site .txt-hero h1 span {
+    display: block;
+    font-weight: 800;
+} 
+
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0, ;
+    padding: 20px 0;
+}
+
+.hero-site .txt-hero p span {
+    display: block;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #fbfafa;
+    border: 1px solid #fbf9f9;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero-site button:hover {
+    background-color: rgb(248, 246, 246);
+    color: #0a0a0a
+}
+
+section.vantagens {
+    padding: 80px 0;
+}
+
+.vantagens .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16%;
+    margin-bottom: 60px;
+}
+
+.vantagens .itens-container .img-itens img{
+    max-width: 460px;
+    border-radius: 20px;
+    box-shadow: 15px 10px 10px  black
+}
+
+.vantagens .itens-container .img-itens img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.vantagens .itens-container .txt-itens h3 {
+    font-size: 50px;
+    line-height: 10px;
+    margin-bottom: 50px;
+}
+
+.vantagens .itens-container .txt-itens p{
+    font-size: 20px;
+}
+
+.section_container header_container{
+    padding: 1rem 1rem 5rem 1rem;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.booking_container{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(50% - 6rem);
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #23232342;
+    -webkit-backdrop-filter: blur(100%);
+    backdrop-filter: blur(10px);
+    box-shadow: 8px 8px 35px black;
+    border-radius: 25px;
+}
+
+.booking_container form{
+    width: 50%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.booking_container .input_group{
+    width: 100%;
+    position: relative;
+}
+
+.booking_container label{
+    position: relative;
+    top: 0%;
+    left: 0;
+    font-size: 20pxpx;
+    text-align: center;
+    color: white;
+    pointer-events:all;
+    transition: 0.5s;
+}
+
+.booking_container input{
+    width: 100%;
+    padding: 10px ;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.booking_container input:focus ~ label{
+    font-size: .8rem;
+    top: 0;
+}
+
+.booking_container .gorm_group p{
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: white;
+}
+
+.booking_container .btn{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.booking_container .btn:hover{
+    transform: scale(1.9);
+    transition: .3s;
+}
+
+.popular_container h2{
+    font-size: 50px;
+    margin-top: 200px;
+}
+.popular_grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    height: 50%;
+}
+
+.popular_card{
+    overflow: hidden;
+    border-radius: 1rem;
+    height: auto;
+    box-shadow: 15px 10px 10px black;
+}
+
+.popular_card:hover{
+    transform: scale(1.10);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.popular_content{
+    padding: 1rem;
+}
+
+.popular_card_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.popular_card_header h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.popular_content p{
+    color: black;
+}
+
+.search-container{
+    background-color: rgba(128, 128, 128, 0.544) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    box-shadow: 20px 20px 50px black;
+    border-radius: 40px;
+    height: 180px;
+    padding: 25px;
+    width: 100%;
+}
+
+.search-container h3{
+    font-size: 25px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.input-field{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+    border-bottom: 1px solid black;   
+}
+
+.passageiros{
+    background-color: rgba(128, 128, 128, 0.544);
+    border-radius: 15%;
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+}
+
+.search{
+    width: 100px;
+    height: 70px;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+    margin-top: 100px;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.contato .txt-contato p{
+    font-size: 20px;
+}
+
+.contato .icons-contato a{
+    text-decoration: none;
+}
+
+.contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px;
+    padding: 0 80px;
+    width: 60%;
+    height: 60px;
+    font-size: 15px;
+    margin: 0 auto 20px auto;
+    transition: .3s;
+}
+
+.contato .icons-contato button i{
+    font-size: 22px;
+}
+
+.contato .icons-contato button:hover{
+    background-color: black;
+    color: white
+}
+
+
+footer{
+   text-align: center;
+   margin-top: 150px;
+}
+
+footer .top-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+footer .top-footer button:hover{
+    background-color: #0a0a0a;
+    color: white;
+    transform: scale(1.4);
+    transition: .3s;
+}
+
+
+.medle-footer{
+    margin: 30px 0;
+    border-top: 2px solid black;
+    padding: 20px;
+}
+
+.medle-footer a{
+   
+    text-decoration: none;
+    margin: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.bottom-footer p{ 
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+
+
+
+
+
